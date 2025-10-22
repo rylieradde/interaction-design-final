@@ -46,7 +46,7 @@
     <header>
       <nav>
         <div class="center-nav">
-            <li><a href="navbar+logo.png"></a></li>
+            <li><a src="navbar+logo.png"></a></li>
           </div>
         <div class="left-nav">
             <li><a>Shop</a></li>
@@ -56,13 +56,17 @@
           <div class="right-nav">
             <li><a>Rewards</a></li>
             <li><a>Acount</a></li>
-            <li><a href="flag+dropdown.png"></a></li>
-            <li><a href="search.png"></a></li>
-            <li><a href="shopingbag.png"></a></li>
+            <li><a src="flag+dropdown.png"></li>
+            <li><a src="search.png"></li>
+            <li><a src="shopingbag.png"></li>
           </div>
       </nav>
 
       <div class="hero-content">
+        <div>
+          <img src="images/cherry-background.png" class="background">
+        </div>
+
         <h1>
           Illuminate your lips with <span class="highlight">cherry</span>
         </h1>
@@ -78,12 +82,22 @@
     <!-- MODAL -->
     <div class="modal" id="modal">
       <div class="modal-header">
-        <div class="title">Holiday Trio</div>
+
         <button data-close-button class="close-button">&times;</button>
-      </div>
+        </div>
       <div class="modal-body">
-        Two limited-edition festive glosses and one bestselling balm — the perfect
+   
+    <div>
+      <img src="images/popup-box.png" class="background">
+        <button class="popup-btn"></button>
+    </div>
+
+    <div>
+      <h2>Holiday Trio</h2>
+        <p>Two limited-edition festive glosses and one bestselling balm — the perfect
         gift to illuminate your lips this holiday season.
+      </p>
+      <button data-modal-target="#modal" class="btn">ADD TO CART +</button>
       </div>
     </div>
     <div id="overlay"></div>

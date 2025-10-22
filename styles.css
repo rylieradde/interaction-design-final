@@ -4,6 +4,69 @@
   box-sizing: border-box;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("reset.css");
+
+/* FONTS!!! 
+.imperial-script {
+    font-family: "Imperial Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  Montserrat (Futura PT replacement)
+  .montserrat-book {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400; 
+    font-style: normal;
+  }
+  
+  .montserrat-medium {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500; 
+    font-style: normal;
+  }
+  
+  .montserrat-demi {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600; 
+    font-style: normal;
+  }
+  
+  .montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  */
+
+  .flip {
+    display: inline-block;
+    font-family: "Imperial Script", cursive;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 0.756;
+    color: #000000;
+    text-align: center;
+    animation: flip 3s infinite linear;
+    transform-origin: center;
+  }
+  
+  @keyframes flip {
+    0% {
+      transform: rotateY(0deg);
+      color: #000000;
+    }
+    50% {
+      transform: rotateY(180deg);
+      color: #000000;
+    }
+    100% {
+      transform: rotateY(360deg);
+      color: #000000;
+    }
+  }
+
 .modal {
   position: fixed;
   top: 50%;
@@ -64,3 +127,5 @@
   opacity: 1;
   pointer-events: all;
 }
+
+

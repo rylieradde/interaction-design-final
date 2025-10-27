@@ -38,68 +38,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Summer Fridays Hero</title>
-    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/abcdefg.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap">
+    <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
   </head>
   <body>
     <!-- HERO -->
-    <header>
-      <nav>
-        <div class="center-nav">
-            <li><a src="navbar+logo.png"></a></li>
+    <header rel="stylesheet">
+        <nav class="site-header" role="navigation" aria-label="Main navigation">
+          <div class="nav-inner">
+            
+          <div class="left-nav">
+            <a href="#" class="nav-text">Shop</a>
+            <a href="#" class="nav-text">About</a>
+            <a href="#" class="nav-text">Blog</a>
           </div>
-        <div class="left-nav">
-            <li><a>Shop</a></li>
-            <li><a>About</a></li>
-            <li><a>Blog</a></li>
+
+            
+          <div class="center-nav">
+            <a href="/">
+            <img src="images/summerfridays-logo.png" alt="Summer Fridays logo" class="nav-logo">
+             </a>
           </div>
+
           <div class="right-nav">
-            <li><a>Rewards</a></li>
-            <li><a>Acount</a></li>
-            <li><a src="flag+dropdown.png"></li>
-            <li><a src="search.png"></li>
-            <li><a src="shopingbag.png"></li>
+            <a href="#" class="nav-text">Rewards</a>
+            <a href="#" class="nav-text">Acount</a>
+            <a href="#">
+              <img src="images/flag+dropdown.png" alt="Select country" class="nav-icon">
+            </a>
+            <a href="#">
+              <img src="images/search.png" alt="Search" class="nav-icon">
+            </a>
+            <a href="#">
+              <img src="images/shopingbag.png" alt="Cart" class="nav-logo">
+            </a>
           </div>
-      </nav>
+          </div>
+        </nav>
 
-      <div class="hero-content">
-        <div>
-          <img src="images/cherry-background.png" class="background">
+      <section class="hero">
+        <div class="hero-content text-center">
+          <h1>
+            <span class="hero-heading">Illuminate your lips with</span>
+            <span class="hero-highlight">cherry</span>
+          </h1>
+          <p class="hero-body">
+            Your holiday sparkle starts here. Spread smiles and shine by putting
+            Summer Fridays’ lip glosses under the Christmas tree.
+          </p>
+          <button class="hero-btn" data-modal-target="#modal" aria-label="Shop now">
+            <span class="hero-btn__text">SHOP NOW →</span>
+          </button>
         </div>
-
-        <h1>
-          Illuminate your lips with <span class="highlight">cherry</span>
-        </h1>
-        <p>
-          Your holiday sparkle starts here. Spread smiles and shine by putting
-          Summer Fridays’ lip glosses under the Christmas tree.
-        </p>
-        <button data-modal-target="#modal" class="btn">SHOP NOW →</button>
-      </div>
+      </section>
     </header>
 
 
     <!-- MODAL -->
-    <div class="modal" id="modal">
-      <div class="modal-header">
+<div class="modal" id="modal">
+  <div class="modal-header">
+    <button data-close-button class="close-button">&times;</button>
+  </div>
 
-        <button data-close-button class="close-button">&times;</button>
-        </div>
-      <div class="modal-body">
-   
-    <div>
-      <img src="images/popup-box.png" class="background">
-        <button class="popup-btn"></button>
-    </div>
-
-    <div>
+  <div class="modal-body">
+    <div class="modal-content">
       <h2>Holiday Trio</h2>
-        <p>Two limited-edition festive glosses and one bestselling balm — the perfect
+      <p>
+        Two limited-edition festive glosses and one bestselling balm — the perfect
         gift to illuminate your lips this holiday season.
       </p>
       <button data-modal-target="#modal" class="btn">ADD TO CART +</button>
-      </div>
     </div>
-    <div id="overlay"></div>
+  </div>
+</div>
+
+<div id="overlay"></div>
   </body>
 </html>

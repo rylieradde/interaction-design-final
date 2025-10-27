@@ -46,23 +46,42 @@ Imperial Script
   font-style: normal;
 }
 */
+.close-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 
-.flip {
-  display: inline-block;
-  font-family: "Imperial Script", cursive;
-  font-weight: 400;
-  font-size: 110px;
-  line-height: 0.756;
+  width: 215px;
+  height: 70px;
+
+  background-color: #FBF3E2;
+  border: none;
+  border-radius: none;
+
+  cursor: pointer;
+  font-family: "Futura PT", "futura-pt", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
   color: #000;
-  text-align: center;
-  animation: flip 3s infinite linear;
-  transform-origin: center;
 }
-@keyframes flip {
-  0%   { transform: rotateY(0deg);   color: #000; }
-  50%  { transform: rotateY(180deg); color: #000; }
-  100% { transform: rotateY(360deg); color: #000; }
-}
+
+.flip { 
+  display: inline-block; 
+  font-family: "Imperial Script", cursive; 
+  font-weight: 400; 
+  font-size: 110px; 
+  line-height: 0.756; 
+  color: #000; 
+  text-align: center; 
+  animation: flip 3s infinite linear; 
+  transform-origin: center; } @keyframes flip { 
+    0% { transform: rotateY(0deg); color: #000; } 
+    50% { transform: rotateY(180deg); color: #000; } 
+    100% { transform: rotateY(360deg); color: #000; } 
+  }
 
 .hero {
   position: relative;
@@ -72,7 +91,6 @@ Imperial Script
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   text-align: center;
   padding: 0 20px;
   width: 100vw;
@@ -80,10 +98,11 @@ Imperial Script
   margin-right: calc(50% - 50vw);
 }
 
-.hero-content {
-  max-width: 700px;
-  padding: 0 20px;
-  color: #1a1a1a;
+.hero-title { 
+  white-space: nowrap; 
+  text-align: center;
+  line-height: 1; 
+  margin: 0 0 1rem; 
 }
 
 .hero-title {
@@ -137,10 +156,7 @@ p.hero-body {
 
   background-color: #FBF3E2;
   border: none;
-  border-radius: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  border-radius: none;
 
   cursor: pointer;
   font-family: "Futura PT", "futura-pt", sans-serif;
@@ -198,12 +214,11 @@ p.hero-body {
 }
 
 .nav-logo {
-  padding-top: 30px;
-  padding-bottom: 28.93px;
-  display: block;
-  max-height: 56px;
-  width: auto;
-  object-fit: contain;
+    display: block !important;
+    max-width: 273px; 
+    height: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
 .modal {
@@ -212,51 +227,153 @@ p.hero-body {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
-  border: 1px solid black;
-  border-radius: 10px;
   z-index: 10;
-  background-color: white;
-  width: 500px;
-  max-width: 80%;
+  width: 1296px;
+  height: 760px;
+  max-width: 90vw;      
+  max-height: 90vh;
+  background-color: #1D2D22;
+  border: none;
+  border-radius: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;       
 }
-.modal.active { transform: translate(-50%, -50%) scale(1); }
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+p.modal-body {
+  font-family: "Futura PT", "futura-pt", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+  color: #FFFFFF;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 40px;
+  letter-spacing: 0.1px;
+  margin-bottom: 36px;
+}
+
+.modal-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 215px;
+  height: 70px;
+
+  background-color: #FBF3E2;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+
+  font-family: "Futura PT", "futura-pt", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #000000;
+  transition: background-image 0.3s ease, transform 0.2s ease;
+}
+
+.modal-btn:hover {
+  background-color: #F6EBD7;
+  transform: translateY(-2px);
+}
+
+.modal-btn:active {
+  transform: translateY(0);
+}
+
+
+.modal-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
 
 .modal-header {
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #FFFFFF;
-}
-
-.modal-header .close-button {
-  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   border: none;
-  outline: none;
-  background: none;
-  font-size: 1.25rem;
-  font-weight: bold;
 }
 
-.modal-body { padding: 10px 15px; }
+.modal h2,
+.modal p {
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  font-family: "Futura PT", "futura-pt", sans-serif;
+}
+
+.modal-heading {
+  font-weight: 400;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.modal-highlight {
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+  font-size: 80px;
+  color: #FFFFFF;
+  line-height: 0.9;
+  display: block;
+}
+
+.modal-left {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  display flex: 0 0 auto;
+  padding: 80px 0 81px 56px;  
+}
+
+.modal-left img {
+  display: block;
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.45));
+  height: auto;
+  max-height: 599px;
+  object-fit: contain;
+  width: 437px;
+}
+
+.modal-right {
+  width: 560px;
+  height: 351px;
+  text-align: center;
+}
 
 #overlay {
   position: fixed;
   opacity: 0;
   transition: 200ms ease-in-out;
   inset: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.3);
   pointer-events: none;
 }
 #overlay.active { opacity: 1; pointer-events: all; }
 
-/* Responsive */
 @media (max-width: 980px) {
   .nav-inner { padding: 12px 16px; }
   .hero-highlight { font-size: 72px; }
   .hero-heading { font-size: 36px; }
   p.hero-body { font-size: 18px; margin-bottom: 24px; max-width: 92%; }
   .hero-btn { width: 160px; height: 55px; font-size: 16px; }
+}
+
+@media (max-width: 900px) {
+  .modal-left img {
+    width: 100%;
+    max-width: 437px; 
+    margin: 0 auto;
+  }
 }
 
 

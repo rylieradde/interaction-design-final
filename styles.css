@@ -120,34 +120,29 @@ p.hero-body {
   letter-spacing: 0.1px;
 }
 
-/* Replace existing .hero-btn block with this to match the popup exactly */
 .hero-btn {
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-
   width: 215px;
   height: 70px;
-
-  background-color: #FBF3E2; /* starting tan */
-  background-image: linear-gradient(to bottom right, #FBF3E2, #fbe6ea);
+  background-color: #FBF3E2;
+  background-image: linear-gradient(to bottom right, #FBF3E2, #f7d5d9);
   border: none;
   border-radius: 0;
   cursor: pointer;
-
-  font-family: "Futura PT", "futura-pt", sans-serif;
+  font-family: "Futura PT", sans-serif;
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  color: #000; /* black text like modal */
-  transition: all 0.4s ease; /* same timing as modal */
+  color: #000000; /* fixed: valid hex */
+  transition: all 0.7s ease;
   overflow: hidden;
 }
 
-/* glossy shine (matches modal) */
 .hero-btn::before {
   content: '';
   position: absolute;
@@ -155,10 +150,9 @@ p.hero-body {
   left: -70px;
   width: 70px;
   height: 100%;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255,255,255,0.4);
   transform: skew(30deg);
-  transition: 0.6s ease;
-  pointer-events: none;
+  transition: 0.5s;
 }
 
 .hero-btn:hover::before {
@@ -166,21 +160,20 @@ p.hero-body {
 }
 
 .hero-btn:hover {
-  background-image: linear-gradient(to bottom right, #F05173, #C21833);
-  color: #fff;
+  background-image: linear-gradient(to bottom right, #f79aaa, #f56b8c);
   transform: translateY(-2px);
 }
 
 .hero-btn:active {
   transform: translateY(0);
-  background-color: #B71C1C;
+  background-color: #d83b5d;
 }
 
+/* fixed selector: removed stray space after colon */
 .hero-btn:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(240, 81, 115, 0.4);
+  box-shadow: 0 0 0 3px rgba(240, 81, 114, 0.3);
 }
-
 
 .left-nav,
 .right-nav {
@@ -298,17 +291,20 @@ p.modal-body {
   transform: skew(30deg) translateX(320px);
 }
 
+/* hover — transition to vibrant red */
 .modal-btn:hover {
   background-image: linear-gradient(to bottom right, #F05173, #C21833);
   color: #fff;
   transform: translateY(-2px);
 }
 
+/* pressed (active) state */
 .modal-btn:active {
   transform: translateY(0);
   background-color: #B71C1C;
 }
 
+/* focus ring */
 .modal-btn:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(240, 81, 115, 0.4);

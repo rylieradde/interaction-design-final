@@ -160,19 +160,21 @@ p.hero-body {
 }
 
 .hero-btn:hover {
-  background-image: linear-gradient(to bottom right, #f79aaa, #f56b8c);
+  background-image: linear-gradient(to bottom right, #F05173, #C21833);
+  color: #fff;
   transform: translateY(-2px);
 }
 
+/* pressed (active) state */
 .hero-btn:active {
   transform: translateY(0);
-  background-color: #d83b5d;
+  background-color: #B71C1C;
 }
 
-/* fixed selector: removed stray space after colon */
+/* focus ring */
 .hero-btn:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(240, 81, 114, 0.3);
+  box-shadow: 0 0 0 3px rgba(240, 81, 115, 0.4);
 }
 
 .left-nav,

@@ -81,15 +81,16 @@ Imperial Script
   margin-right: calc(50% - 50vw);
 }
 
-.hero::before {
-  animation: flipWords infinite;
+.hero-highlight::before {
+    content: "cherry";
+    animation: flipWords 15s infinite;
 }
 
 .hero-title {
   white-space: nowrap;
   text-align: center;
   line-height: 1;
-  margin: 35px 0 1rem; /* fixed: added 'px' unit */
+  margin: 35px 0 1rem; 
 }
 
 .hero-heading {
@@ -111,9 +112,6 @@ Imperial Script
   line-height: 0.9;
   margin-left: 10px;
   vertical-align: baseline;
-  animation-name: flipWords;
-  animation-duration: 300ms;
-
 }
 
 p.hero-body {
@@ -146,7 +144,7 @@ p.hero-body {
   font-size: 20px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  color: #000000; /* fixed: valid hex */
+  color: #000000; 
   transition: all 0.7s ease;
   overflow: hidden;
 }
@@ -173,13 +171,11 @@ p.hero-body {
   transform: translateY(-2px);
 }
 
-/* pressed (active) state */
 .hero-btn:active {
   transform: translateY(0);
   background-color: #B71C1C;
 }
 
-/* focus ring */
 .hero-btn:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(240, 81, 115, 0.4);
@@ -268,7 +264,7 @@ p.modal-body {
   gap: 10px;
   width: 215px;
   height: 70px;
-  background-color: #FBF3E2; /* starting tan */
+  background-color: #FBF3E2; 
   background-image: linear-gradient(to bottom right, #FBF3E2, #fbe6ea);
   border: none;
   border-radius: 0;
@@ -283,7 +279,6 @@ p.modal-body {
   overflow: hidden;
 }
 
-/* glossy shine */
 .modal-btn::before {
   content: '';
   position: absolute;
@@ -301,20 +296,17 @@ p.modal-body {
   transform: skew(30deg) translateX(320px);
 }
 
-/* hover — transition to vibrant red */
 .modal-btn:hover {
   background-image: linear-gradient(to bottom right, #F05173, #C21833);
   color: #fff;
   transform: translateY(-2px);
 }
 
-/* pressed (active) state */
 .modal-btn:active {
   transform: translateY(0);
   background-color: #B71C1C;
 }
 
-/* focus ring */
 .modal-btn:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(240, 81, 115, 0.4);

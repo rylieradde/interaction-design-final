@@ -46,6 +46,7 @@ Imperial Script
   font-style: normal;
 }
 */
+
 .close-btn {
   display: inline-flex;
   align-items: center;
@@ -80,6 +81,10 @@ Imperial Script
   margin-right: calc(50% - 50vw);
 }
 
+.hero::before {
+  animation: flipWords infinite;
+}
+
 .hero-title {
   white-space: nowrap;
   text-align: center;
@@ -106,6 +111,9 @@ Imperial Script
   line-height: 0.9;
   margin-left: 10px;
   vertical-align: baseline;
+  animation-name: flipWords;
+  animation-duration: 300ms;
+
 }
 
 p.hero-body {
@@ -383,12 +391,17 @@ p.modal-body {
   pointer-events: all;
 }
 
-@keyframes flipWord {
-  0%   { opacity: 0; transform: rotateY(90deg); }
-  3%   { opacity: 1; transform: rotateY(0deg); }
-  30%  { opacity: 1; transform: rotateY(0deg); }
-  35%  { opacity: 0; transform: rotateY(-90deg); }
-  100% { opacity: 0; transform: rotateY(-90deg); }
+@keyframes flipWords {
+  0% { content: "cherry"; }
+  11.1% { content: "vanilla"; }
+  22.2% { content: "birthday cake"; }
+  33.3% { content: "pink sugar"; }
+  44.4% { content: "pink guava";}
+  55.6% { content: "iced coffee"; }
+  66.7% { content: "vanilla beige"; }
+  77.8% { content: "brown sugar"; }
+  88.9% { content: "poppy"; }
+  100% { content: "sweet mint";}
 }
 
 @media (max-width: 980px) {

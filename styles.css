@@ -98,7 +98,7 @@ Imperial Script
   font-family: "Futura PT", sans-serif;
   font-weight: 400;
   font-size: 60px;
-  color: #111;
+  color: #111111;
   letter-spacing: 0.3px;
   vertical-align: baseline;
 }
@@ -108,7 +108,7 @@ Imperial Script
   font-family: "Imperial Script", cursive;
   font-weight: 400;
   font-size: 110px;
-  color: #111;
+  color: #111111;
   line-height: 0.9;
   margin-left: 10px;
   vertical-align: baseline;
@@ -300,11 +300,6 @@ p.modal-body {
   background-image: linear-gradient(to bottom right, #F05173, #C21833);
   color: #fff;
   transform: translateY(-2px);
-}
-
-.modal-btn:active {
-  transform: translateY(0);
-  background-color: #B71C1C;
 }
 
 .modal-btn:focus-visible {
